@@ -4,6 +4,7 @@
       href="../bower_components/iron-input/iron-input.html">
 <dom-module id="observed-property">
     <template>
+        <!-- two-way data-binding -->
         <input is="iron-input" bind-value="{{person}}" placeholder="Escribe tu nombre">
         <p> Tu nombre es: <strong>{{person}}</strong></p>
         <content></content>
@@ -16,7 +17,7 @@
             person: {
                 type: String, 
                 value: "Héctor"
-            }
+            },
         }
     });
     </script>
