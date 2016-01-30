@@ -1,0 +1,25 @@
+{
+  "name": "creating_components",
+  "authors": [
+    "Héctor Iván <hectorivanpatriciomoreno@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer-project/Polymer#^1.2.4",
+    "gulp": "^3.9.0",
+    "iron-input": "PolymerElements/iron-input#^1.0.8",
+    "iron-ajax": "PolymerElements/iron-ajax#^1.1.1"
+  }
+}

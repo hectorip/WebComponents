@@ -1,0 +1,19 @@
+<link rel="import"
+      href="../bower_components/polymer/polymer.html">
+<dom-module id="bound-data">
+    <template>
+        <p> Template de elemento suuper básico y la propiedad configurada es: <strong>{{p}}</strong></p>
+    </template>
+    <script>
+    Polymer({
+        is: "bound-data", 
+        properties: {
+            p: {
+                type: String, 
+                value: "Val"
+            }
+        }
+    });
+    </script>
+    
+</dom-module>

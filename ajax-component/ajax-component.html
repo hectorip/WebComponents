@@ -1,0 +1,36 @@
+<link rel="import"
+      href="../bower_components/polymer/polymer.html">
+<link rel="import"
+      href="../bower_components/iron-ajax/iron-ajax.html">
+<dom-module id="ajax-component">
+    <template>
+        <iron-ajax
+             auto
+             url="https://numbersapi.p.mashape.com/42/trivia?fragment=true&json=true&notfound=floor"
+             headers ='{"X-Mashape-Key": "QlCcLOfn1fmsh9JGTyiZkpHPqwNTp1hHO0RjsnAlj3FrG33bsc"}'
+             handle-as="json"
+             on-response="handleResponse"></iron-ajax>
+        Number: {{num}}
+    </template>
+
+    <script>
+    Polymer({
+        is: "ajax-component", 
+        properties: {
+            num: {
+                type: String, 
+                value: "0"
+            }
+        },
+        handleResponse: function(response, resp){
+            data = response.detail.response;
+            console.log(resp);
+            this.num = data.number;
+        }
+    });
+
+    </script>
+    
+</dom-module>
+
+
